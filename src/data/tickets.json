@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "eventName": "DWP 2025",
+    "location": "Jakarta",
+    "time": "2025-08-31T20:00:00Z",
+    "isUsed": false
+  },
+  {
+    "id": 2,
+    "eventName": "Java Jazz Festival",
+    "location": "JIExpo Kemayoran",
+    "time": "2025-05-24T20:30:00Z",
+    "isUsed": false
+  },
+  {
+    "id": 3,
+    "eventName": "DWP 2024",
+    "location": "GWK, Bali",
+    "time": "2024-12-15T22:00:00Z",
+    "isUsed": true
+  },
+  {
+    "id": 4,
+    "eventName": "We The Fest 2025",
+    "location": "GBK Sports Complex",
+    "time": "2025-07-20T18:00:00Z",
+    "isUsed": false
+  },
+  {
+    "id": 5,
+    "eventName": "Pestapora 2024",
+    "location": "Gambir Expo",
+    "time": "2024-09-22T16:00:00Z",
+    "isUsed": true
+  },
+  {
+    "id": 6,
+    "eventName": "Synchronize Fest",
+    "location": "Gambir Expo",
+    "time": "2025-10-05T17:00:00Z",
+    "isUsed": false
+  }
+]
