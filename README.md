@@ -1,40 +1,98 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Ticket Viewer
 
-## Getting Started
+A simple web application for displaying and managing event tickets. This app allows users to view a list of tickets, filter them by status (used/unused), and change ticket status.
 
-First, run the development server:
+## How to Run the Project
+
+### Requirements
+
+- Node.js (version 14.0.0 or higher)
+- npm (version 6.0.0 or higher)
+
+### Step 1: Clone Repository
+
+```bash
+# Clone repository
+git clone https://github.com/aizarfarhan25/ticketviewer.git
+```
+
+### Step 2: Create a New Branch
+
+Always create a new branch for working on features or fixes to avoid breaking the main branch:
+
+```bash
+# Make sure you are on the latest main branch
+git checkout main
+git pull
+
+# Create new branch
+git checkout -b your-branch-name
+```
+
+### Step 3: Install Dependencies
+
+```bash
+npm install
+```
+
+### Step 4: Run Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+You can start editing the page by changing `src/pages/index.tsx`. The page will update automatically as you edit the file.
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Project Structure
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+This project uses the standard Next.js folder structure with some additional folders:
+
+```
+├── public/           # Static assets (images, favicon, etc.)
+├── src/
+│   ├── components/   # Reusable React components
+│   ├── data/         # Static data and adapters
+│   ├── pages/        # Next.js pages and API routes
+│   ├── styles/       # Global CSS files
+│   └── types/        # TypeScript definitions
+```
+
+### Main Components
+
+- `TicketContainer`: Main component that manages ticket state and filters
+- `TicketList`: Displays the list of tickets
+- `TicketCard`: Shows individual ticket information
+- `TicketFilter`: Allows filtering tickets by status
+
+### Data Management
+
+Ticket data is stored in a static JSON file at `src/data/tickets.json` and processed through an adapter in `src/data/ticketAdapter.ts`.
 
 This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+## How to Contribute
 
-To learn more about Next.js, take a look at the following resources:
+To contribute to this project, follow these steps:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+1. Fork this repository
+2. Create a new branch (`git checkout -b new-feature`)
+3. Make your changes
+4. Commit your changes (`git commit -m 'Add new feature'`)
+5. Push to the branch (`git push origin new-feature`)
+6. Create a Pull Request
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Code Conventions
 
-## Deploy on Vercel
+- Use TypeScript for all JavaScript files
+- Follow consistent code formatting (use ESLint and Prettier)
+- Write clear comments for complex functions and components
+- Make sure all components have well-defined types
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Technologies Used
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+- [Next.js](https://nextjs.org/) - React framework
+- [TypeScript](https://www.typescriptlang.org/) - JavaScript with static types
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
+
