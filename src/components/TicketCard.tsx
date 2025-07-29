@@ -33,7 +33,7 @@ const TicketCard: React.FC<TicketCardProps> = ({ ticket, onStatusChange }) => {
         <p className="text-gray-600 mb-4">{ticket.time}</p>
 
         <div className="border-t pt-3">
-          <p className="text-gray-950 font-semibold mb-1">{ticket.owner}</p>
+          {/* <p className="text-gray-950 font-semibold mb-1">{ticket.owner}</p> */}
         </div>
 
         <div className="flex justify-between items-center mt-4">

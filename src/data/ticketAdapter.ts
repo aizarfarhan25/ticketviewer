@@ -18,7 +18,7 @@ export const adaptTickets = (): Ticket[] => {
     location: ticket.location,
     time: formatDateTime(ticket.time),
     status: ticket.isUsed ? "used" : "active",
-    owner: "Aizar Farhan",
+    // owner: "Aizar Farhan",
   }));
 };
 

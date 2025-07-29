@@ -4,5 +4,5 @@ export interface Ticket {
   location: string;
   time: string;
   status: 'active' | 'used';
-  owner: string;
+  // owner: string;
 }
