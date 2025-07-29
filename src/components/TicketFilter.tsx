@@ -23,7 +23,7 @@ const TicketFilter: React.FC<TicketFilterProps> = ({ activeFilter, onFilterChang
         Active
       </button>
       <button
-        className={`px-6 py-2 rounded-full ${activeFilter === 'used' ? 'bg-slate-600 text-white' : 'bg-white text-black'}`}
+        className={`px-6 py-2 rounded-full ${activeFilter === 'used' ? 'bg-emerald-400 text-white' : 'bg-white text-black'}`}
         onClick={() => onFilterChange('used')}
       >
         Used
